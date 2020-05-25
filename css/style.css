@@ -1,0 +1,21 @@
+html {
+    background-color: #E36F65;
+}
+
+#page-top {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.dropdown .dropdown-toggle {
+    border: none;
+    outline: none;
+    background-color: inherit;
+
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+
+
