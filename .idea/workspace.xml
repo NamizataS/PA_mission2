@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="460de48a-bcd5-44a5-9af2-236f4fafc10f" name="Default Changelist" comment="" />
+    <list default="true" id="460de48a-bcd5-44a5-9af2-236f4fafc10f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/conf.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/conf.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/footer_homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/footer_homepage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/header_homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header_homepage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/language/changeLanguage.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/language/changeLanguage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/language/english.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/language/english.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/language/french.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/language/french.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +31,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cOYNmGD2f6CYzzRqxaOUKHVgsR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -48,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590401068944</updated>
       <workItem from="1590401071268" duration="1875000" />
-      <workItem from="1590403734337" duration="11967000" />
+      <workItem from="1590403734337" duration="19227000" />
     </task>
     <servers />
   </component>
@@ -56,12 +73,12 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="391" key="NewPhpFileDialog" timestamp="1590430956139">
+    <state x="558" y="391" key="NewPhpFileDialog" timestamp="1590443356034">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="558" y="387" key="NewPhpFileDialog/0.23.1440.814@0.23.1440.814" timestamp="1590424198539" />
     <state x="558" y="388" key="NewPhpFileDialog/0.23.1440.816@0.23.1440.816" timestamp="1590412410814" />
-    <state x="558" y="391" key="NewPhpFileDialog/0.23.1440.822@0.23.1440.822" timestamp="1590430956139" />
+    <state x="558" y="391" key="NewPhpFileDialog/0.23.1440.822@0.23.1440.822" timestamp="1590443356034" />
     <state x="417" y="289" key="com.intellij.ide.util.TipDialog" timestamp="1590401072145">
       <screen x="0" y="23" width="1440" height="816" />
     </state>

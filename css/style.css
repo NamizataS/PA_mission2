@@ -17,5 +17,13 @@ html {
     display: block;
 }
 
+.languageBtn {
+    margin-top: 1%;
+}
+
+.navbar-nav {
+    margin-left: 50%;
+}
+
 
 

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <?php
 session_start();
 if($_SESSION['language'] == "fr"){
@@ -21,12 +22,11 @@ if($_SESSION['language'] == "fr"){
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../js/bootstrap.min.js">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
-<body id="page-top">
+<body id="page-top" style="background-color: #E36F65">
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE5A8">
         <div class="container">
@@ -41,7 +41,7 @@ if($_SESSION['language'] == "fr"){
                     <li class="nav-item active mx-5">
                         <a class="nav-link" href="register.php" style="color: #E36F65"> <?php echo $register; ?><span class="sr-only">(current)</span> </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active mx-5">
                         <a class="nav-link" href="login.php" style="color: #E36F65"> <?php echo $login; ?> <span class="sr-only">(current)</span> </a>
                     </li>
 

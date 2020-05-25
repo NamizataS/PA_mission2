@@ -7,4 +7,4 @@
         $_SESSION['language'] = "fr";
     }
 
-    header('Location: ../header_homepage.php');
+    header('Location: ../index.php');
