@@ -13,3 +13,15 @@ $email = "Adresse email";
 $password = "Mot de passe";
 $connexion = "Me connecter";
 
+//REGISTER
+$create = "Créer un compte";
+$lastname = "Nom";
+$firstname = "Prénom";
+$birthdate = "Date de naissance";
+$street = "Rue";
+$postcode = "Code postal";
+$city = "Ville";
+$submit = "Valider";
+$text_birthdate = "Format aaaa-mm-jj";
+
+
