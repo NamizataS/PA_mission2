@@ -1,4 +1,4 @@
- <footer class="text-center footerStyle" >
+ <footer class="text-center" style="background-color: #FFE5A8; position: absolute; bottom: auto;width: 100%; padding: 40px">
      <br/>
      <br/>
      <div class="container" style="color: #E36F65">
