@@ -1,25 +1,25 @@
 <?php
 
-$register = "Register";
-$login = "Sign In";
-$lang = "EN";
-$french_btn = "French";
-$english_btn = "English";
+$text_register = "Register";
+$text_login = "Sign In";
+$text_lang = "EN";
+$text_french_btn = "French";
+$text_english_btn = "English";
 
 //LOGIN
-$return_home = "Return to homepage";
-$connexion_sentence = "Please sign in";
-$email = "Email address";
-$password = "Password";
-$connexion = "Sign In";
+$text_return_home = "Return to homepage";
+$text_connexion_sentence = "Please sign in";
+$text_email = "Email address";
+$text_password = "Password";
+$text_connexion = "Sign In";
 
 //REGISTER
-$create = "Create my account";
-$lastname = "Lastname";
-$firstname = "Firstname";
-$birthdate = "Birthdate";
-$street = "Street";
-$postcode = "Zip Code";
-$city = "City";
-$submit = "Submit";
-$text_birthdate = "Format aaaa-mm-jj";
+$text_create = "Create my account";
+$text_lastname = "Last name";
+$text_firstname = "First name";
+$text_birthdate = "Birth date";
+$text_street = "Street";
+$text_postcode = "Zip Code";
+$text_city = "City";
+$text_submit = "Submit";
+$text_birthdate_format = "Format aaaa-mm-jj";

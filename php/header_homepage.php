@@ -39,20 +39,20 @@ if($_SESSION['language'] == "fr"){
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="register.php" style="color: #E36F65"> <?php echo $register; ?><span class="sr-only">(current)</span> </a>
+                        <a class="nav-link" href="register.php" style="color: #E36F65"> <?php echo $text_register; ?><span class="sr-only">(current)</span> </a>
                     </li>
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="login.php" style="color: #E36F65"> <?php echo $login; ?> <span class="sr-only">(current)</span> </a>
+                        <a class="nav-link" href="login.php" style="color: #E36F65"> <?php echo $text_login; ?> <span class="sr-only">(current)</span> </a>
                     </li>
 
                     <li class="nav-item dropdown languageBtn">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #E36F65">
-                                <?php echo $lang; ?>
+                                <?php echo $text_lang; ?>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="./language/changeLanguage.php?lang=fr" style="color: #E36F65"><?php echo $french_btn ?></a>
-                                <a class="dropdown-item" href="./language/changeLanguage.php?lang=en" style="color: #E36F65"><?php echo $english_btn ?></a>
+                                <a class="dropdown-item" href="./language/changeLanguage.php?lang=fr" style="color: #E36F65"><?php echo $text_french_btn ?></a>
+                                <a class="dropdown-item" href="./language/changeLanguage.php?lang=en" style="color: #E36F65"><?php echo $text_english_btn ?></a>
                             </div>
                         </div>
                     </li>
