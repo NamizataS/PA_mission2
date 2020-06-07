@@ -25,5 +25,12 @@ html {
     margin-left: 50%;
 }
 
+.footerStyle {
+    background-color: #FFE5A8;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+}
+
 
 

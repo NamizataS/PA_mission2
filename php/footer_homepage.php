@@ -1,4 +1,4 @@
- <footer class="text-center" style="background-color: #FFE5A8">
+ <footer class="text-center footerStyle" >
      <br/>
      <br/>
      <div class="container" style="color: #E36F65">
