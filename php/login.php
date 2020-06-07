@@ -20,7 +20,10 @@ if( isset($_POST['checkLogin'])) {
         $_SESSION['mail'] = $user['email'];
         $_SESSION['lastname'] = $user['lastname'];
         $_SESSION['firstname'] = $user['firstname'];
+        //$_SESSION['userPostcode'] = $user['postcode'];
+        $_SESSION['id'] = $user['id'];
         $_SESSION['language'] = "fr";
+
         header( "Location: ./client/index_client.php?lang=fr");
     }
     else {
