@@ -31,7 +31,7 @@ if($_SESSION['language'] == "fr"){
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE5A8">
     <div class="container">
         <a class="navbar-brand" href="index_client.php" style="color: #E36F65">
-            <img src="../img/logo2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="../../img/logo2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
             Driv'N Cook</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

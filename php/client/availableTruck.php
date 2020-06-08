@@ -12,9 +12,14 @@ $county = $county / 1000;
 $county = intval($county);
 
 
-$_SESSION['userPostcode'] = $county;
-echo "county : " . $county;
 
+
+?>
+<div class="hero-wrap hero-wrap-big">
+    <br/>
+    <div class="container">
+        <div class="card card-register mx-auto mt-5">
+            <?php
 $db = connectDB();
 $query = $db->query("SELECT * FROM truck");
 
@@ -24,18 +29,24 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
     $postcode = $postcode / 1000;
     $postcode = intval($postcode);
     if($postcode == $county && $row['franchise_id'] != NULL) {
-        echo "success & truck id : " . $row['id'] . " & postcode : " . $postcode;
         ?>
-        <a href="truckPage.php?truckId=<?php echo $row['id']?>"><input type="submit" name="seeMore" class="btn btn-primary" value="See more"/></a>
+    <div class="card" style="width: 18rem;">
+        <img src="../../img/burger_poulet.jpg" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title"><?php echo $row['name'].$row['id']; ?></h5>
+            <a href="truckPage.php?truckId=<?php echo $row['franchise_id']?>"><input type="submit" name="seeMore" class="btn btn-primary" value="See more"/></a>
+
+        </div>
+    </div>
+
         <?php
         $truckAvailable++;
-    } else {
-        echo "fail & truck id : " . $row['id'] . " & postcode : " . $postcode;
-
     }
-
 }
 
 if($truckAvailable == 0){
     echo "<br/> Sorry we don't have any truck selling food in your area :(";
-}
+} ?>
+        </div>
+    </div>
+</div>

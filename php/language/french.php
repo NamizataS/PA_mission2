@@ -25,3 +25,4 @@ $text_submit = "Valider";
 $text_birthdate_format = "Format aaaa-mm-jj";
 
 
+//TRUCK PAGE
