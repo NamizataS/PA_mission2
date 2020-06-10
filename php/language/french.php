@@ -5,7 +5,7 @@ $login = "Se connecter";
 $lang = "FR";
 $french_btn = "Français";
 $english_btn = "Anglais";
-
+$text_successful_payment = "Congratulation, vous avez terminé votre commande!";
 //LOGIN
 $return_home = "Retour à la page d'accueil";
 $connexion_sentence = "Connectez-vous";

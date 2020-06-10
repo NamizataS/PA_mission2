@@ -5,6 +5,7 @@ $text_login = "Sign In";
 $text_lang = "EN";
 $text_french_btn = "French";
 $text_english_btn = "English";
+$text_successful_payment = "Congratulation, you just finished your order!";
 
 //LOGIN
 $text_return_home = "Return to homepage";

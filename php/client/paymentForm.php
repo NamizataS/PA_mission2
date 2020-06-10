@@ -5,12 +5,10 @@ require '../functions.php';
 require 'header_client.php';
 ?>
 <div>
+    Please enter your information to pay for your order.
     <form action="payment.php" id="paymentForm" method="post">
         <div>
             <input type="text" name="name" placeholder="name" required value="test"/>
-        </div>
-        <div>
-            <input type="email" name="email" placeholder="email" required value="test@test.com"/>
         </div>
         <div>
             <input type="text" placeholder="Votre code de carte bleu" data-stripe="number" required value="4242 4242 4242 4242"/>
@@ -25,7 +23,7 @@ require 'header_client.php';
             <input type="text" placeholder="CVC" data-stripe="cvc" required value="123"/>
         </div>
         <p>
-            <button type="submit" class="button">Acheter</button>
+            <button type="submit" class="button">Pay $amount</button>
         </p>
 
     </form>

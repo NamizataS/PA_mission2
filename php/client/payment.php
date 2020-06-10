@@ -1,9 +1,10 @@
 <?php
+session_start();
 $token = $_POST['stripeToken'];
 $name = $_POST['name'];
-$mail = $_POST['email'];
+$mail = $_SESSION['mail'];
 //need to recup amount of bill to add it in $charge
-//pour name & mail, utiliser les variables de session
+
 if (filter_var($mail,FILTER_VALIDATE_EMAIL)
     && !empty($name)
     && !empty($token )) {
@@ -24,6 +25,6 @@ if (filter_var($mail,FILTER_VALIDATE_EMAIL)
         'customer' => $customer->id
     ]);
 
-    var_dump($charge);
-    die('Congrat chacal');
+    //var_dump($charge);
+    header( "Location: successfulPayment.php");
 }

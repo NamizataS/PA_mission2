@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="460de48a-bcd5-44a5-9af2-236f4fafc10f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/index_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/index_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/paymentForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/paymentForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/language/english.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/language/english.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/language/french.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/language/french.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
