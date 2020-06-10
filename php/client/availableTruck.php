@@ -1,8 +1,6 @@
 <?php
 require "header_client.php";
 require "../functions.php";
-
-session_start();
 $user = getUserByEmail( $_SESSION['mail']);
 
 $truckAvailable = 0;
@@ -31,10 +29,10 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
     if($postcode == $county && $row['franchise_id'] != NULL) {
         ?>
     <div class="card" style="width: 18rem;">
-        <img src="../../img/burger_poulet.jpg" class="card-img-top">
+        <img src="../../img/foodtruck.jpg" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title"><?php echo $row['name'].$row['id']; ?></h5>
-            <a href="truckPage.php?truckId=<?php echo $row['franchise_id']?>"><input type="submit" name="seeMore" class="btn btn-primary" value="See more"/></a>
+            <a href="truckPage.php?franchiseid=<?php echo $row['franchise_id']?>"><input type="submit" name="seeMore" class="btn btn-primary" value="See more"/></a>
 
         </div>
     </div>
@@ -50,3 +48,9 @@ if($truckAvailable == 0){
         </div>
     </div>
 </div>
+
+<script src="../../js/store.js"></script>
+
+
+
+

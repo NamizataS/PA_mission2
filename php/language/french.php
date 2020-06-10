@@ -25,4 +25,9 @@ $text_submit = "Valider";
 $text_birthdate_format = "Format aaaa-mm-jj";
 
 
-//TRUCK PAGE
+//CART
+$text_product = "PRODUITS";
+$text_price = "PRIX";
+$text_quantity = "QUANTITE";
+$text_total = "TOTAL";
+

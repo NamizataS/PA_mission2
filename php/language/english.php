@@ -23,3 +23,9 @@ $text_postcode = "Zip Code";
 $text_city = "City";
 $text_submit = "Submit";
 $text_birthdate_format = "Format aaaa-mm-jj";
+
+//CART
+$text_product = "PRODUCTS";
+$text_price = "PRICE";
+$text_quantity = "QUANTITY";
+$text_total = "TOTAL";

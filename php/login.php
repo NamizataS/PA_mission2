@@ -24,7 +24,7 @@ if( isset($_POST['checkLogin'])) {
         $_SESSION['id'] = $user['id'];
         $_SESSION['language'] = "fr";
 
-        header( "Location: ./client/index_client.php?lang=fr");
+        header( "Location: ./client/availableTruck.php?lang=fr");
     }
     else {
         session_destroy();
