@@ -29,35 +29,35 @@ if ( isset($_POST['lastname']) && isset($_POST['firstname']) && isset($_POST['bi
     <br/>
     <div class="container">
         <div class="card card-register mx-auto mt-5" style="background-color: #FFE5A8">
-            <input type=button onclick=window.location.href='index.php' value="<?php echo $return_home; ?>"/>
+            <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
             <div class="card-header">
-                <h1 class="text-center"><?php echo $create; ?></h1>
+                <h1 class="text-center"><?php echo $text_create; ?></h1>
             </div>
 
             <div class="card-body">
                 <form method="post" action="register.php">
                     <div class="form-row">
                         <div class="form-group col-md-4">
-                            <label for="lastname"><?php echo $lastname; ?></label>
+                            <label for="lastname"><?php echo $text_lastname; ?></label>
                             <input type="text" class="form-control" id="lastname" name="lastname"/>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="firstname"><?php echo $firstname; ?></label>
+                            <label for="firstname"><?php echo $text_firstname; ?></label>
                             <input type="text" class="form-control" id="firstname" name="firstname"/>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="birthdate"><?php echo $birthdate; ?></label>
+                            <label for="birthdate"><?php echo $text_birthdate; ?></label>
                             <input type="date" class="form-control" id="birthdate" name="birthdate">
-                            <small id="birthdateHelp" class="form-text text-muted"><?php echo $text_birthdate; ?></small>
+                            <small id="birthdateHelp" class="form-text text-muted"><?php echo $text_birthdate_format; ?></small>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="email"><?php echo $email; ?></label>
+                            <label for="email"><?php echo $text_email; ?></label>
                             <input type="email" class="form-control" id="email" name="email"/>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="password"><?php echo $password; ?></label>
+                            <label for="password"><?php echo $text_password; ?></label>
                             <input type="password" class="form-control" id="password" name="password"/>
                         </div>
                     </div>
@@ -67,21 +67,21 @@ if ( isset($_POST['lastname']) && isset($_POST['firstname']) && isset($_POST['bi
                             <input type="text" class="form-control" id="num" name="num"/>
                         </div>
                         <div class="form-group col-md-8">
-                            <label for="street"><?php echo $street; ?></label>
+                            <label for="street"><?php echo $text_street; ?></label>
                             <input type="text" class="form-control" id="street" name="street"/>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
-                            <label for="postcode"><?php echo $postcode; ?></label>
+                            <label for="postcode"><?php echo $text_postcode; ?></label>
                             <input type="text" class="form-control" id="postcode" name="postcode"/>
                         </div>
                         <div class="form-group col-md-7">
-                            <label for="city"><?php echo $city; ?></label>
+                            <label for="city"><?php echo $text_city; ?></label>
                             <input type="text" class="form-control" id="city" name="city"/>
                         </div>
                     </div>
-                    <input type="submit" class="btn btn-outline-primary" value="<?php echo $submit; ?>">
+                    <input type="submit" class="btn btn-outline-primary" value="<?php echo $text_submit; ?>">
                 </form>
             </div>
         </div>
