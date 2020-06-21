@@ -31,7 +31,7 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
     <div class="card" style="width: 18rem;">
         <img src="../../img/foodtruck.jpg" class="card-img-top">
         <div class="card-body">
-            <h5 class="card-title"><?php echo $row['name'].$row['id']; ?></h5>
+            <h5 class="card-title"><?php echo $row['name']; ?></h5>
             <a href="truckPage.php?franchiseid=<?php echo $row['franchise_id']?>"><input type="submit" name="seeMore" class="btn btn-primary" value="See more"/></a>
 
         </div>

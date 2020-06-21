@@ -1,43 +1,32 @@
-html {
-    background-color: #E36F65;
+/* Other styles for the page not related to the animated dropdown */
+
+body {
+    background: #E36F65;
+    background: linear-gradient(to right, #E36F65, #FFE5A8);
 }
 
-#page-top {
-    font-family: 'Gothic A1', sans-serif;
+html,
+body {
+    height: 100%;
 }
 
-.dropdown .dropdown-toggle {
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: inherit;
+    background: gray;
+}
+
+/* HEADER CLIENT */
+#dropdownMenuButton {
     border: none;
     outline: none;
     background-color: inherit;
-
 }
 
-.dropdown:hover>.dropdown-menu {
+#dropdownMenuButton:hover {
     display: block;
 }
-
-.languageBtn {
-    margin-top: 1%;
-}
-
-.navbar-nav {
-    margin-left: 50%;
-}
-
-.footerStyle {
-    background-color: #FFE5A8;
-    position: absolute;
-    bottom: auto;
-    width: 100%;
-}
-
-.footerStyle footer {
-    background-color: #FFE5A8;
-}
-
-
-
-
-
 

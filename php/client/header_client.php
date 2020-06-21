@@ -42,6 +42,7 @@ if($_SESSION['language'] == "fr"){
             padding: 10px;
         }
 
+
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -93,7 +94,7 @@ if($_SESSION['language'] == "fr"){
                 <li class="nav-item active mx-5">
                     <a class="nav-link" href="clientProfil.php" style="color: #E36F65"> <?php echo "Profil"; ?> </a>
                 </li>
-                <li class="nav-item active mx-5 cart" style="margin-top: 1%">
+                <li class="nav-item active mx-5 cart" id="cart" style="margin-top: 1%">
                     <span style="margin-left: 5px">0</span>
                     <a href="cart.php">
                         <i class="fas fa-cart-plus"></i>

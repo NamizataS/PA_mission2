@@ -41,7 +41,7 @@ if( isset($_POST['checkLogin'])) {
     <br/>
 
     <div class="container">
-        <div class="card card-register mx-auto mt-5" style="background-color: #FFE5A8">
+        <div class="card card-register mx-auto mt-5">
             <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
             <div class="card-header">
                 <h1 class="text-center"><?php echo $text_connexion_sentence; ?></h1>

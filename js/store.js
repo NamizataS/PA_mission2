@@ -8,10 +8,11 @@ let productsPrice = document.getElementsByClassName('price');
 
 //put the products name and price in an array with a new variable incart
 let products = [];
+
 for ( let i = 0; i<carts.length; i++ ){
     products.push( { tag: productImage[i].getAttribute("src"), name: productsName[i].innerHTML, price: parseFloat(productsPrice[i].innerHTML), inCart: 0 });
 }
-
+console.log( products );
 for ( let i = 0; i < carts.length; i++ ){
     carts[i].addEventListener( 'click', () => {
         cartNumbers( products[i] );
@@ -29,7 +30,7 @@ function onLoadCartNumbers() {
 
 //this function get the number of items there are in a cart
 function cartNumbers( product ) {
-
+    console.log(product);
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
     if ( productNumbers ){
@@ -117,7 +118,7 @@ function displayCart() {
         productContainer.innerHTML +=
             '<div class="basketTotalContainer">' +
                 '<h4 class="basketTotalTitle">' +
-                    'Total' +
+                    'Total ' +
                 '</h4>' +
                 '<h4 class="basketTotal">' +
                     ''+cartCost+'€' +
@@ -135,11 +136,26 @@ let deleteProduct = document.querySelectorAll('.deleteProduct');
 let addQuantity = document.querySelectorAll('.addQuantity');
 let lessQuantity = document.querySelectorAll('.lessQuantity');
 
-for ( let i = 0; i < addQuantity.length; i++ ){
-    addQuantity[i].addEventListener( 'click', () => {
-        addQuantityToProduct( addQuantity[i] );
-    });
+//function to get all the products in the cart
+function getProductsInCart(){
+
 }
+let productInCart = localStorage.getItem('productInCart');
+productInCart = JSON.parse( productInCart );
+
+if ( productInCart ){
+    let productTagInCart = Object.keys(productInCart);
+    console.log( Object.keys(productInCart));
+    console.log( productTagInCart.length );
+
+
+    for ( let i = 0; i < addQuantity.length; i++ ){
+        addQuantity[i].addEventListener( 'click', () => {
+            addQuantityToProduct( productTagInCart[i] );
+        });
+    }
+}
+
 
 function addQuantityToProduct( product ) {
     let productInCart = localStorage.getItem('productInCart');
@@ -147,8 +163,21 @@ function addQuantityToProduct( product ) {
     let totalCost = localStorage.getItem( 'totalCost');
 
     productInCart = JSON.parse( productInCart );
+
+    if ( productInCart[product] ){
+        productInCart[product].inCart += 1;
+        console.log(productInCart[product]);
+        localStorage.setItem( 'productInCart', JSON.stringify(productInCart));
+        totalCost = parseFloat( totalCost );
+        localStorage.setItem( 'totalCost', totalCost + productInCart[product].price );
+    }
     cartNumbers = parseInt( cartNumbers );
     localStorage.setItem('cartNumbers', cartNumbers + 1 );
+    document.querySelector('.cart span').textContent = cartNumbers + 1;
+    /*if ( totalCost ){
+        totalCost = parseFloat( totalCost );
+        localStorage.setItem('totalCost', product.price + totalCost );
+    } */
 
 
 }
