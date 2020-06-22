@@ -26,7 +26,6 @@ if ( isset($_POST['lastname']) && isset($_POST['firstname']) && isset($_POST['bi
 
 <div class="big-hero-wrap">
     <br/>
-    <br/>
     <div class="container">
         <div class="card card-register mx-auto mt-5" style="background-color: #FFE5A8">
             <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
@@ -87,7 +86,8 @@ if ( isset($_POST['lastname']) && isset($_POST['firstname']) && isset($_POST['bi
         </div>
     </div>
 </div>
-
+<br/>
+<br/>
 
 
 <?php

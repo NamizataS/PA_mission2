@@ -3,7 +3,8 @@ session_start();
 $token = $_POST['stripeToken'];
 $name = $_POST['name'];
 $mail = $_SESSION['mail'];
-//need to recup amount of bill to add it in $charge
+$total = $_POST['totalCart'];
+$total = intval($total) * 100;
 
 if (filter_var($mail,FILTER_VALIDATE_EMAIL)
     && !empty($name)
@@ -20,7 +21,7 @@ if (filter_var($mail,FILTER_VALIDATE_EMAIL)
 
     // amount in cents
     $charge = $stripe->api('charges', [
-        'amount' => 1000,
+        'amount' => $total,
         'currency' => 'eur',
         'customer' => $customer->id
     ]);

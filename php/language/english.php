@@ -16,11 +16,36 @@ $text_connexion = "Sign In";
 
 //REGISTER
 $text_create = "Create my account";
-$text_lastname = "Lastname";
-$text_firstname = "Firstname";
-$text_birthdate = "Birthdate";
+$text_lastname = "Last name";
+$text_firstname = "First name";
+$text_birthdate = "Birth date";
 $text_street = "Street";
 $text_postcode = "Zip Code";
 $text_city = "City";
 $text_submit = "Submit";
 $text_birthdate_format = "Format aaaa-mm-jj";
+
+//CART
+$text_product = "PRODUCTS";
+$text_price = "PRICE";
+$text_quantity = "QUANTITY";
+$text_total = "TOTAL";
+$text_order = "Place order";
+
+// TRUCK
+$text_no_truck = "Sorry we don't have any truck selling food in your area :(";
+$text_see_more = "See more";
+
+//PROFIL
+$text_profil = "Your profil";
+$text_address = "Address";
+
+//PAYMENT
+$text_card_information = "Please enter your information to pay for your order.";
+$text_name = "Name";
+$text_code = "Your card's number";
+$text_code_format = "format: XXXX XXXX XXXX XXXX";
+$text_month = "MM";
+$text_year = "YY";
+$text_cvc = "CVC";
+$text_pay = "Pay";

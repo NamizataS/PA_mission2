@@ -20,8 +20,11 @@ if( isset($_POST['checkLogin'])) {
         $_SESSION['mail'] = $user['email'];
         $_SESSION['lastname'] = $user['lastname'];
         $_SESSION['firstname'] = $user['firstname'];
+        //$_SESSION['userPostcode'] = $user['postcode'];
+        $_SESSION['id'] = $user['id'];
         $_SESSION['language'] = "fr";
-        header( "Location: ./client/index_client.php?lang=fr");
+
+        header( "Location: ./client/availableTruck.php?lang=fr");
     }
     else {
         session_destroy();
@@ -38,23 +41,23 @@ if( isset($_POST['checkLogin'])) {
     <br/>
 
     <div class="container">
-        <div class="card card-register mx-auto mt-5" style="background-color: #FFE5A8">
-            <input type=button onclick=window.location.href='index.php' value="<?php echo $return_home; ?>"/>
+        <div class="card card-register mx-auto mt-5">
+            <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
             <div class="card-header">
-                <h1 class="text-center"><?php echo $connexion_sentence; ?></h1>
+                <h1 class="text-center"><?php echo $text_connexion_sentence; ?></h1>
             </div>
 
             <div class="card-body">
                 <form method="POST" action="login.php">
                     <div class="form-group">
-                        <label for="email"><?php echo $email; ?></label>
+                        <label for="email"><?php echo $text_email; ?></label>
                         <input type="email" name="mail" class="form-control" id="mail" aria-describedby="mail"/>
                     </div>
                     <div class="form-group">
-                        <label for="password"><?php echo $password; ?></label>
+                        <label for="password"><?php echo $text_password; ?></label>
                         <input type="password" name="password" class="form-control" id="password"/>
                     </div>
-                    <button type="submit" name="checkLogin" class="btn btn-outline-primary"><?php echo $connexion; ?> </button>
+                    <button type="submit" name="checkLogin" class="btn btn-outline-primary"><?php echo $text_connexion; ?> </button>
                 </form>
             </div>
         </div>

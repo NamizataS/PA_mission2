@@ -4,26 +4,30 @@ session_start();
 require '../functions.php';
 require 'header_client.php';
 ?>
+
+<?php
+
+?>
 <div>
-    Please enter your information to pay for your order.
+    <?php echo $text_card_information ?>
     <form action="payment.php" id="paymentForm" method="post">
         <div>
-            <input type="text" name="name" placeholder="name" required />
+            <input type="text" name="name" placeholder="<?php echo $text_name ?>" required />
         </div>
         <div>
-            <input type="text" placeholder="Votre code de carte bleu" data-stripe="number" required />
+            <input type="text" placeholder="<?php echo $text_code ?>" data-stripe="number" required /> <?php echo $text_code_format ?>
         </div>
         <div>
-            <input type="text" placeholder="MM" data-stripe="exp_month" required />
+            <input type="text" placeholder="<?php echo $text_month ?>MM" data-stripe="exp_month" required />
         </div>
         <div>
-            <input type="text" placeholder="YY" data-stripe="exp_year" required />
+            <input type="text" placeholder="<?php echo $text_year ?>YY" data-stripe="exp_year" required />
         </div>
         <div>
-            <input type="text" placeholder="CVC" data-stripe="cvc" required />
+            <input type="text" placeholder="<?php echo $text_cvc ?>CVC" data-stripe="cvc" required />
         </div>
         <p>
-            <button type="submit" class="button">Pay $amount</button>
+            <button type="submit" class="button"><?php echo $text_pay ?>Pay</button>
         </p>
 
     </form>
@@ -32,6 +36,8 @@ require 'header_client.php';
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
+    let totalCost = localStorage.getItem( 'totalCost');
+
     Stripe.setPublishableKey('pk_test_51GrTSyGkPfKmwVQII3Zljyz7EglR7NHiAfoNqJdQiIXEIlltchHMBVRN7peXTyT3M0mRMfyWJzsSQ3eLwuTNvCdS00l5thmuLY')
 
     let $form = $('#paymentForm')
@@ -46,8 +52,9 @@ require 'header_client.php';
                 $form.prepend('<div class="error"> ' + response.error.message + ' </div>');
             } else {
                 let token = response.id;
-
+                //console.log("total", totalCost);
                 $form.append($('<input type="hidden" name="stripeToken">').val(token));
+                $form.append($('<input type="hidden" name="totalCart">').val(totalCost));
                 $form.get(0).submit();
             }
         })
