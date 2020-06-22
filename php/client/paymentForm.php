@@ -8,19 +8,19 @@ require 'header_client.php';
     Please enter your information to pay for your order.
     <form action="payment.php" id="paymentForm" method="post">
         <div>
-            <input type="text" name="name" placeholder="name" required value="test"/>
+            <input type="text" name="name" placeholder="name" required />
         </div>
         <div>
-            <input type="text" placeholder="Votre code de carte bleu" data-stripe="number" required value="4242 4242 4242 4242"/>
+            <input type="text" placeholder="Votre code de carte bleu" data-stripe="number" required />
         </div>
         <div>
-            <input type="text" placeholder="MM" data-stripe="exp_month" required value="10"/>
+            <input type="text" placeholder="MM" data-stripe="exp_month" required />
         </div>
         <div>
-            <input type="text" placeholder="YY" data-stripe="exp_year" required value="21"/>
+            <input type="text" placeholder="YY" data-stripe="exp_year" required />
         </div>
         <div>
-            <input type="text" placeholder="CVC" data-stripe="cvc" required value="123"/>
+            <input type="text" placeholder="CVC" data-stripe="cvc" required />
         </div>
         <p>
             <button type="submit" class="button">Pay $amount</button>
