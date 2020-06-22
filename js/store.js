@@ -136,10 +136,7 @@ let deleteProduct = document.querySelectorAll('.deleteProduct');
 let addQuantity = document.querySelectorAll('.addQuantity');
 let lessQuantity = document.querySelectorAll('.lessQuantity');
 
-//function to get all the products in the cart
-function getProductsInCart(){
 
-}
 let productInCart = localStorage.getItem('productInCart');
 productInCart = JSON.parse( productInCart );
 
@@ -148,10 +145,15 @@ if ( productInCart ){
     console.log( Object.keys(productInCart));
     console.log( productTagInCart.length );
 
-
     for ( let i = 0; i < addQuantity.length; i++ ){
         addQuantity[i].addEventListener( 'click', () => {
             addQuantityToProduct( productTagInCart[i] );
+        });
+    }
+
+    for ( let i =0; i < lessQuantity.length; i++ ){
+        lessQuantity[i].addEventListener( 'click', () =>{
+            lessQuantityToProduct( productTagInCart[i] );
         });
     }
 }
@@ -170,14 +172,16 @@ function addQuantityToProduct( product ) {
         localStorage.setItem( 'productInCart', JSON.stringify(productInCart));
         totalCost = parseFloat( totalCost );
         localStorage.setItem( 'totalCost', totalCost + productInCart[product].price );
+        document.querySelector('.basketTotal').textContent = totalCost + productInCart[product].price + '€';
     }
     cartNumbers = parseInt( cartNumbers );
     localStorage.setItem('cartNumbers', cartNumbers + 1 );
     document.querySelector('.cart span').textContent = cartNumbers + 1;
-    /*if ( totalCost ){
-        totalCost = parseFloat( totalCost );
-        localStorage.setItem('totalCost', product.price + totalCost );
-    } */
+}
 
+function lessQuantityToProduct( product ) {
+    let productInCart = localStorage.getItem('productInCart');
+    let cartNumbers = localStorage.getItem( 'cartNumbers');
+    let totalCost = localStorage.getItem( 'totalCost');
 
 }

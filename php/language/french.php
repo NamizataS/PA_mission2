@@ -30,4 +30,5 @@ $text_product = "PRODUITS";
 $text_price = "PRIX";
 $text_quantity = "QUANTITE";
 $text_total = "TOTAL";
+$text_order = "Commander";
 
