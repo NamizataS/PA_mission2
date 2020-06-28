@@ -1,7 +1,6 @@
 <?php
 require 'header_client.php';
 require '../functions.php';
-require '../../js/store.js'
 ?>
 
 <div class="container">
