@@ -23,7 +23,7 @@ if($_SESSION['language'] == "fr"){
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <script src="https://kit.fontawesome.com/ea8eff44b6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    <script src="https://kit.fontawesome.com/ea8eff44b6.js" crossorigin="anonymous"></script>
 
     <style>
         .add-cart {
@@ -76,11 +76,11 @@ if($_SESSION['language'] == "fr"){
     </style>
 </head>
 
-<body id="page-top" style="background-color: #E36F65">
+<body id="page-top">
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE5A8">
     <div class="container">
-        <a class="navbar-brand" href="clientProfil.php" style="color: #E36F65">
+        <a class="navbar-brand" href="index_client.php" style="color: #E36F65">
             <img src="../../img/logo2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
             Driv'N Cook</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -5,14 +5,11 @@ require '../functions.php';
 require 'header_client.php';
 ?>
 
-<?php
-$db = connectDB();
-$query = $db->query( "SELECT * FROM client WHERE email='".$_SESSION['mail']."'");
-while ($smtm = $query->fetch(PDO::FETCH_ASSOC )){
-    echo '<img src="data:image/png;base64,'.base64_encode( $smtm['barcode'] ).'"/>';
-}
-?>
+<div class="container">
+    <button class="btn btn-primary" id="locationButton">Get Location</button>
+</div>
 
+<script src="../../js/localisation.js"></script>
 <?php
 require '../footer_homepage.php';
 
