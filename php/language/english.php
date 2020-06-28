@@ -30,3 +30,4 @@ $text_price = "PRICE";
 $text_quantity = "QUANTITY";
 $text_total = "TOTAL";
 $text_order = "Place order";
+$text_update = "Update";

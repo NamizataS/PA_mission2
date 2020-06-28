@@ -31,4 +31,5 @@ $text_price = "PRIX";
 $text_quantity = "QUANTITE";
 $text_total = "TOTAL";
 $text_order = "Commander";
+$text_update = "Rafraichir";
 

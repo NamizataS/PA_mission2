@@ -16,7 +16,9 @@ require '../functions.php';
             </thead>
             <tbody class="products"></tbody>
         </table>
-        <input type="button" onclick=window.location.href='#' value="<?php echo $text_order; ?>">
+        <div class="px-md-5">
+            <input type="button" onclick=window.location.href='#' value="<?php echo $text_order; ?>">
+        </div>
     </div>
 </div>
 
