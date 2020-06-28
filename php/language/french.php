@@ -32,6 +32,7 @@ $text_price = "PRIX";
 $text_quantity = "QUANTITE";
 $text_total = "TOTAL";
 $text_order = "Commander";
+$text_update = "Rafraichir";
 
 //TRUC
 $text_no_truck = "Désolé, il n'y a pas de truck dans les alentours :(";

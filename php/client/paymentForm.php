@@ -18,16 +18,16 @@ require 'header_client.php';
             <input type="text" placeholder="<?php echo $text_code ?>" data-stripe="number" required /> <?php echo $text_code_format ?>
         </div>
         <div>
-            <input type="text" placeholder="<?php echo $text_month ?>MM" data-stripe="exp_month" required />
+            <input type="text" placeholder="<?php echo $text_month ?>" data-stripe="exp_month" required />
         </div>
         <div>
-            <input type="text" placeholder="<?php echo $text_year ?>YY" data-stripe="exp_year" required />
+            <input type="text" placeholder="<?php echo $text_year ?>" data-stripe="exp_year" required />
         </div>
         <div>
-            <input type="text" placeholder="<?php echo $text_cvc ?>CVC" data-stripe="cvc" required />
+            <input type="text" placeholder="<?php echo $text_cvc ?>" data-stripe="cvc" required />
         </div>
         <p>
-            <button type="submit" class="button"><?php echo $text_pay ?>Pay</button>
+            <button type="submit" class="button"><?php echo $text_pay ?></button>
         </p>
 
     </form>

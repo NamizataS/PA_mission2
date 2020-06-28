@@ -16,7 +16,9 @@ require '../functions.php';
             </thead>
             <tbody class="products"></tbody>
         </table>
-        <input type="button" onclick=window.location.href='paymentForm.php' value="<?php echo $text_order; ?>">
+        <div class="mx-auto">
+            <a class="btn btn-secondary" href="paymentForm.php" role="button"><?php echo $text_order; ?></a>
+        </div>
     </div>
 </div>
 

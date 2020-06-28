@@ -49,3 +49,4 @@ $text_month = "MM";
 $text_year = "YY";
 $text_cvc = "CVC";
 $text_pay = "Pay";
+$text_update = "Update";
