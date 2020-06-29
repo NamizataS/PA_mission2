@@ -24,7 +24,7 @@ if($_SESSION['language'] == "fr"){
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    <script src="https://kit.fontawesome.com/ea8eff44b6.js" crossorigin="anonymous"></script>
-
+    <script src="../js/localisation.js"></script>
     <style>
         .add-cart {
             text-align: center;

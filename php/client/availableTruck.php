@@ -51,6 +51,9 @@ if($truckAvailable == 0){
 
 <script src="../../js/store.js"></script>
 
+<?php
+require 'footer_client.php';
+?>
 
 
 

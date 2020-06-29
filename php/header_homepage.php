@@ -24,6 +24,7 @@ if($_SESSION['language'] == "fr"){
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
+
 </head>
 
 <body id="page-top" class="d-flex flex-column">

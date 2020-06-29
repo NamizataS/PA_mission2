@@ -4,7 +4,7 @@ require '../functions.php';
 
 $franchiseid = $_GET['franchiseid'];
 ?>
-<div class="hero-wrap big-hero-wrap" style="background-color: #E36F65">
+<div class="hero-wrap big-hero-wrap" id="page-content" style="background-color: #E36F65">
     <br/>
     <div class="container" style="background-color: #FFE5A8">
         <br/>

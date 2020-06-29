@@ -17,13 +17,17 @@ locationButton.addEventListener( 'click', () => {
             request.onload = function () {
                 if ( request.status == 200 ){
                     var data = JSON.parse( request.responseText );
+                    console.log(data);
                     console.log( data.results[0].formatted );
+                    console.log(data.results[0].components.postcode);
+                    let postcode = data.results[0].components.postcode;
+
                 }
-            }
+            };
 
             request.send();
-        });
 
+        });
     } else {
         console.log('fail');
     }
