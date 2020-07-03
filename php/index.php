@@ -12,6 +12,8 @@ require 'header_homepage.php' ?>
     </div>
 </div>
 
-<script src="../js/localisation.js"></script>
 <?php
-require 'footer_homepage.php' ?>
+require 'footer_homepage.php';
+?>
+
+

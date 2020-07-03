@@ -51,3 +51,7 @@ $text_month = "MM";
 $text_year = "YY";
 $text_cvc = "CVC";
 $text_pay = "Payer";
+
+//NEWSLETTER
+$text_signup = "S'inscrire";
+$text_sucess_add = "Vous êtes bien inscrit à la newsletter";

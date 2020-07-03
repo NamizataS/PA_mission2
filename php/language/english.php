@@ -50,3 +50,7 @@ $text_year = "YY";
 $text_cvc = "CVC";
 $text_pay = "Pay";
 $text_update = "Update";
+
+//NEWSLETTER
+$text_signup = "Sign Up";
+$text_success_add = "You've been successfully added to our newsletter";
