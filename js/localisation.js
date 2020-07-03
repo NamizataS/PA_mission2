@@ -1,5 +1,6 @@
 let locationButton = document.getElementById('locationButton');
-locationButton.addEventListener( 'click', () => {
+let postcode = 0;
+function getLoc(){
     if ( "geolocation in navigator" ){
         navigator.geolocation.getCurrentPosition( function (position) {
             var apikey = '0a056a691dd14afc9a3ef1cbcbfedec1';
@@ -20,15 +21,20 @@ locationButton.addEventListener( 'click', () => {
                     console.log(data);
                     console.log( data.results[0].formatted );
                     console.log(data.results[0].components.postcode);
-                    let postcode = data.results[0].components.postcode;
-
+                    data.results[0].components.postcode;
+                    postcode = data.results[0].components.postcode;
+                    document.getElementById("maPosition").innerHTML = postcode;
                 }
             };
-
             request.send();
-
         });
     } else {
         console.log('fail');
     }
+}
+
+getLoc();
+locationButton.addEventListener( 'click', () => {
+
 });
+
