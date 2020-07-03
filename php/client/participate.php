@@ -20,7 +20,7 @@ $eventId = $_GET['event'];
             <?php echo $text_confirm_participate_event ?>
         </p>
         <p>
-            <a href="eventPage.php?participateEvent=<?php echo $eventId; ?>">
+            <a href="listOfEvents.php?participateEvent=<?php echo $eventId; ?>">
                 <input type="submit" name="generatePdf" class="btn btn-primary" value="<?php echo $text_yes?>"/>
             </a>
             <a href="listOfEvents.php">

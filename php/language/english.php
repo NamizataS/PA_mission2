@@ -31,8 +31,10 @@ $text_price = "PRICE";
 $text_quantity = "QUANTITY";
 $text_total = "TOTAL";
 $text_order = "Place order";
+$text_update = "Refresh";
 
 // TRUCK
+$text_list_truck = "List of nearby trucks";
 $text_no_truck = "Sorry we don't have any truck selling food in your area :(";
 $text_see_more = "See more";
 
@@ -52,8 +54,15 @@ $text_pay = "Pay";
 $text_update = "Update";
 
 //EVENT
+$text_list_event = "List of nearby events";
 $text_theme = "Event's theme :";
 $text_no_event = "There is no event near your location";
 $text_event_location = "Location of the event";
 $text_event_date = "Date of the event";
 $text_deleted_event = "The following events have been deleted :";
+$text_yes = "Yes";
+$text_no = "No";
+$text_confirm_participate_event = "Do you want to participate to the event?";
+$text_confirm_unsuscribe_event = "Do you no longer want to go to the event?";
+$text_participate = "Participate";
+$text_stop_participate = "Withdraw";

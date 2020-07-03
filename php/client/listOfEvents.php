@@ -17,19 +17,19 @@ if(isset($_GET['participateEvent'])){
 
     $eventParticipation = $_GET['participateEvent'];
 
-    $query2 = $db->prepare(" INSERT INTO participate ( client_id, event_id, participate)
-                                                VALUES (  :client_id, :event_id, :participate ) ");
+    $query2 = $db->prepare(" INSERT INTO participate ( client_id, event_id, deleted)
+                                                VALUES (  :client_id, :event_id, :deleted ) ");
 
     $query2->execute([
         "client_id" => $userId,
         "event_id" => $eventParticipation,
-        "participate" => 0
+        "deleted" => 0
     ]);
 
     $query1 = $db->query("SELECT * FROM event WHERE id=" . $eventParticipation);
     $amount = 0;
     while ($row2 = $query1->fetch(PDO::FETCH_ASSOC)) {
-        $amount = intval(['guest']);
+        $amount = intval($row2['guest']);
     }
     $amount += 1;
 
@@ -41,16 +41,16 @@ if(isset($_GET['deleteParticipation'])){
 
     $deleteParticipation = $_GET['deleteParticipation'];
 
-    $db->query('UPDATE participate SET participate=1 WHERE event_id =' . $eventParticipation .' AND client_id=' . $userId);
+    $db->query('UPDATE participate SET deleted=1 WHERE client_id=' . $userId);
 
-    $query1 = $db->query("SELECT * FROM event WHERE id=" . $deleteParticipation);
+    $query2 = $db->query("SELECT * FROM event WHERE id=" . $deleteParticipation);
     $amount = 0;
-    while ($row2 = $query1->fetch(PDO::FETCH_ASSOC)) {
-        $amount = intval(['guest']);
+    while ($row3 = $query2->fetch(PDO::FETCH_ASSOC)) {
+        $amount = intval($row3['guest']);
     }
     $amount -= 1;
 
-    //$db->query('UPDATE event SET guest='. $amount .' WHERE id =' . $deleteParticipation);
+    $db->query('UPDATE event SET guest='. $amount .' WHERE id =' . $deleteParticipation);
 
 }
 
@@ -60,7 +60,12 @@ $query = $db->query("SELECT * FROM event");
 <div class="hero-wrap hero-wrap-big">
     <br/>
     <div class="container">
-        <div class="card card-register mx-auto mt-5">
+        <div class="card card-register mx-auto mt-5"
+             style="
+                 background-color: rgba(0, 0, 255, 0);
+                 border-style: none;"
+        >
+            <h4> <?php echo $text_list_event ; ?> </h4>
             <?php
 
 

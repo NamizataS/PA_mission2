@@ -8,7 +8,9 @@ $userId = $_SESSION['id'];
 
 <div class="hero-wrap big-hero-wrap" style="background-color: #E36F65">
     <br/>
-    <div class="container" style="background-color: #FFE5A8">
+    <div class="container" style="
+                 background-color: rgba(0, 0, 255, 0);
+                 border-style: none;">
         <br/>
         <?php
 
@@ -42,20 +44,20 @@ $userId = $_SESSION['id'];
 
                 $eventFound = 0;
                 while($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
-                    if ($row2['event_id'] == $eventId && $row2['participate'] == 0){
+                    if ($row2['event_id'] == $eventId && $row2['deleted'] == 0){
                         $eventFound += 1;
                     }
                 }
-                if($eventFound == 0 ||  $row2['participate'] == 1) {
+                if($eventFound == 0 ||  $row2['deleted'] == 1) {
                     ?>
                     <a href="participate.php?event=<?php echo $eventId ?>"
-                        <button class="btn btn-lg btn-success btn-block">Participer</button>
+                        <button class="btn btn-lg btn-success btn-block"><?php echo $text_participate ?></button>
                     </a>
                     <?php
                 } elseif ($eventFound > 0) {
                     ?>
                     <a href="unsuscribe.php?event=<?php echo $eventId ?>"
-                    <button class="btn btn-lg btn-danger btn-block">Se désister de l'event</button>
+                    <button class="btn btn-lg btn-danger btn-block"><?php echo $text_stop_participate ?></button>
                     </a>
                     <?php
                 }
