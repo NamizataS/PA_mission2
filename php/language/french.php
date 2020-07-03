@@ -51,3 +51,14 @@ $text_month = "MM";
 $text_year = "YY";
 $text_cvc = "CVC";
 $text_pay = "Payer";
+
+//EVENT
+$text_theme = "Thème de l'évènement :";
+$text_no_event = "Il n'y a pas d'évènement près de chez vous";
+$text_event_location = "Lieux de l'évènement";
+$text_event_date = "Date de l'évènement";
+$text_deleted_event = "Les évènements suivants ont été supprimé :";
+$text_yes = "Oui";
+$text_no = "Non";
+$text_confirm_participate_event = "Voulez vous participer à l'évènement?";
+$text_confirm_unsuscribe_event = "Voulez vous désinscrire de l'évènement?";

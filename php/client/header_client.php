@@ -92,6 +92,9 @@ if($_SESSION['language'] == "fr"){
                     <a class="nav-link" href="availableTruck.php" style="color: #E36F65"> <?php echo "Liste des truck à proximité"; ?></a>
                 </li>
                 <li class="nav-item active mx-5">
+                    <a class="nav-link" href="listOfEvents.php" style="color: #E36F65"> <?php echo "Liste des évènements à proximité"; ?></a>
+                </li>
+                <li class="nav-item active mx-5">
                     <a class="nav-link" href="clientProfil.php" style="color: #E36F65"> <?php echo "Profil"; ?> </a>
                 </li>
                 <li class="nav-item active mx-5 cart" id="cart" style="margin-top: 1%">

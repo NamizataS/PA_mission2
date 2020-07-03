@@ -50,3 +50,10 @@ $text_year = "YY";
 $text_cvc = "CVC";
 $text_pay = "Pay";
 $text_update = "Update";
+
+//EVENT
+$text_theme = "Event's theme :";
+$text_no_event = "There is no event near your location";
+$text_event_location = "Location of the event";
+$text_event_date = "Date of the event";
+$text_deleted_event = "The following events have been deleted :";
