@@ -37,11 +37,28 @@ if(isset($_GET['participateEvent'])){
 
 }
 
+if(isset($_GET['eventUpdate'])){
+    echo "congrat :" . $_GET['eventUpdate'] . ".";
+    $eventUpdate = $_GET['eventUpdate'];
+
+    $db->query('UPDATE participate SET deleted=0 WHERE client_id=' . $userId . " AND event_id=" . $eventUpdate);
+
+    $query3 = $db->query("SELECT * FROM event WHERE id=" . $eventUpdate);
+    $amount = 0;
+    while ($row4 = $query3->fetch(PDO::FETCH_ASSOC)) {
+        $amount = intval($row4['guest']);
+    }
+    $amount += 1;
+
+    $db->query('UPDATE event SET guest='. $amount .' WHERE id =' . $eventUpdate);
+
+}
+
 if(isset($_GET['deleteParticipation'])){
 
     $deleteParticipation = $_GET['deleteParticipation'];
 
-    $db->query('UPDATE participate SET deleted=1 WHERE client_id=' . $userId);
+    $db->query('UPDATE participate SET deleted=1 WHERE client_id=' . $userId . " AND event_id=" . $deleteParticipation);
 
     $query2 = $db->query("SELECT * FROM event WHERE id=" . $deleteParticipation);
     $amount = 0;
@@ -66,6 +83,7 @@ $query = $db->query("SELECT * FROM event");
                  border-style: none;"
         >
             <h4> <?php echo $text_list_event ; ?> </h4>
+            <?php echo "Test :" . $_GET['eventUpdate']. "." ; ?>
             <?php
 
 

@@ -6,6 +6,4 @@ require '../functions.php'; ?>
 </footer>
 
     </body>
-<script src="../../js/bootstrap.min.js"></script>
-<script src="../../js/jquery.min.js"></script>
 </html>

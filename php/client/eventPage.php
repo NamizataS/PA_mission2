@@ -43,18 +43,27 @@ $userId = $_SESSION['id'];
                 $stmt2 = $db->query('SELECT * FROM participate WHERE client_id=' . $userId);
 
                 $eventFound = 0;
+                $eventDeleted = 0;
                 while($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
                     if ($row2['event_id'] == $eventId && $row2['deleted'] == 0){
                         $eventFound += 1;
+                    } elseif ($row2['event_id'] == $eventId && $row2['deleted'] == 1){
+                        $eventDeleted += 1;
                     }
                 }
-                if($eventFound == 0 ||  $row2['deleted'] == 1) {
+                if($eventFound == 0 && $eventDeleted == 0) {
                     ?>
                     <a href="participate.php?event=<?php echo $eventId ?>"
                         <button class="btn btn-lg btn-success btn-block"><?php echo $text_participate ?></button>
                     </a>
                     <?php
-                } elseif ($eventFound > 0) {
+                } elseif ($eventDeleted > 0) {
+                    ?>
+                    <a href="reparticipate.php?eventUpdate=<?php echo $eventId ?>"
+                    <button class="btn btn-lg btn-success btn-block"><?php echo $text_participate ?></button>
+                    </a>
+                    <?php
+                }elseif ($eventFound > 0) {
                     ?>
                     <a href="unsuscribe.php?event=<?php echo $eventId ?>"
                     <button class="btn btn-lg btn-danger btn-block"><?php echo $text_stop_participate ?></button>

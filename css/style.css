@@ -17,7 +17,6 @@ body {
 #sticky-footer {
     flex-shrink: inherit;
     background: gray;
-    bottom: inherit;
 }
 
 /* HEADER CLIENT */
@@ -29,12 +28,5 @@ body {
 
 #dropdownMenuButton:hover {
     display: block;
-}
-
-#availableTruck{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 30px;
-
 }
 

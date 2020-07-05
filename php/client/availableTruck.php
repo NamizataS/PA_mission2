@@ -15,7 +15,7 @@ $county = intval($county);
 ?>
 <div class="hero-wrap hero-wrap-big">
     <br/>
-    <div class="container" id="availableTruck">
+    <div class="container">
         <div class="card card-register mx-auto mt-5">
             <?php
 $db = connectDB();
