@@ -44,7 +44,7 @@ require 'header_client.php';
 
     $form.submit(function (e) {
         e.preventDefault();
-        $form.find('.button').attr('disabled', true);
+        //$form.find('.button').attr('disabled', true);
         Stripe.card.createToken($form, function (status, response){
             if (response.error){
                 $form.find('.message').remove();
