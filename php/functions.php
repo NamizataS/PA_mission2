@@ -1,6 +1,6 @@
 <?php
 require 'conf.inc.php';
-
+$_SESSION['language'] = "fr";
 function connectDB(){
     $options= [
         'host='.DB_HOST,

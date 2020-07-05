@@ -11,6 +11,6 @@ require 'header_client.php';
 
 <script src="../../js/localisation.js"></script>
 <?php
-require '../footer_homepage.php';
+require 'footer_client.php';
 
 
