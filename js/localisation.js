@@ -8,9 +8,8 @@ function getLocation() {
 }
 
 function redirectToPosition( position ) {
-    window.location = 'truckAvailable.php?lat='+position.coords.latitude+'&lng='+position.coords.longitude;
+    window.location = 'truckAvailable.php?lat=' + position.coords.latitude + '&lng=' + position.coords.longitude;
 }
-
 
 
 
