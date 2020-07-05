@@ -23,8 +23,8 @@ if($_SESSION['language'] == "fr"){
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ea8eff44b6.js" crossorigin="anonymous"></script>
+
     <style>
         .add-cart {
             text-align: center;
@@ -76,11 +76,11 @@ if($_SESSION['language'] == "fr"){
     </style>
 </head>
 
-<body id="page-top">
+<body id="page-top" style="background-color: #E36F65">
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE5A8">
     <div class="container">
-        <a class="navbar-brand" href="../index.php" style="color: #E36F65">
+        <a class="navbar-brand" href="clientProfil.php" style="color: #E36F65">
             <img src="../../img/logo2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
             Driv'N Cook</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,10 +89,13 @@ if($_SESSION['language'] == "fr"){
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active mx-5">
-                    <a class="nav-link" href="availableTruck.php" style="color: #E36F65"> <?php echo "Liste des truck à proximité"; ?></a>
+                    <a class="nav-link" href="availableTruck.php" style="color: #E36F65"> <?php echo $text_list_truck; ?></a>
                 </li>
                 <li class="nav-item active mx-5">
-                    <a class="nav-link" href="clientProfil.php" style="color: #E36F65"> <?php echo "Profil"; ?> </a>
+                    <a class="nav-link" href="listOfEvents.php" style="color: #E36F65"> <?php echo $text_list_event; ?></a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="clientProfil.php" style="color: #E36F65"> <?php echo $text_profil; ?> </a>
                 </li>
                 <li class="nav-item active mx-5 cart" id="cart" style="margin-top: 1%">
                     <span style="margin-left: 5px">0</span>
