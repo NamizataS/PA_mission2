@@ -2,12 +2,17 @@
 
 <?php
 session_start();
-if($_SESSION['language'] == "fr"){
-    require "./language/french.php";
+if ( isset($_SESSION['language'] ) ){
+    if($_SESSION['language'] == "fr"){
+        require "./language/french.php";
 
-} else if($_SESSION['language'] == "en") {
-    require "./language/english.php";
+    } else if($_SESSION['language'] == "en") {
+        require "./language/english.php";
+    }
+} else {
+    $_SESSION['language'] = "fr";
 }
+
 
 
 ?>
