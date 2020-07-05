@@ -15,7 +15,6 @@ try {
     echo 'fail';
 }
 $postcode = intval($result['results'][0]['components']['postcode']/1000);
-
 $db = connectDB();
 $query = $db->query('SELECT * FROM truck');
 $count = 0;
