@@ -1,17 +1,28 @@
 <?php
-require 'header_homepage.php' ?>
+require 'header_homepage.php';
 
-<div id="page-content">
+
+?>
+
+<header class="masthead">
     <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col-md-7">
-                <h1 class="font-weight-light mt-4 text-white">Sticky Footer using Flexbox</h1>
-                <p class="lead text-white-50">Use just two Bootstrap 4 utility classes and three custom CSS rules and you will have a flexbox enabled sticky footer for your website!</p>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <h1>Bienvenue sur Driv'N Cook un site qui vous permet de commander vos plats préférés</h1>
+                        <button onclick="getLocation()" class="btn btn-outline btn-xl">Get Location</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</header>
 
 <script src="../js/localisation.js"></script>
+
+
+
 <?php
 require 'footer_homepage.php' ?>
+

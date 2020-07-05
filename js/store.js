@@ -94,45 +94,45 @@ function displayCart() {
     if ( cartItems && productContainer ){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
-           productContainer.innerHTML +=
-               '<tbody class="products">' +
-                   '<tr>' +
-                       '<td>' +
-                           '<a href="#" class="deleteProduct">' +
-                               '<i class="far fa-window-close"></i>' +
-                           '</a> ' +
-                           '<img src="'+item.tag+'" width="70" height="70">' +
-                           ''+item.name+'' +
-                       '</td>' +
-                       '<td class="price">' +
-                            ''+item.price+'€' +
-                       '</td>' +
-                       '<td class="quantity">' +
-                            '<a href="#" class="lessQuantity">' +
-                                '<i class="fas fa-arrow-circle-left"></i>' +
-                            '</a> ' +
-                            '<span class="itemQuantity">' +
-                                ''+item.inCart+'' +
-                            '</span> ' +
-                            '<a href="#" class="addQuantity">' +
-                                '<i class="fas fa-arrow-circle-right"></i>' +
-                            '</a> ' +
-                       '</td>' +
-                       '<td>' +
-                            ''+item.price * item.inCart+'€'+
-                       '</td>' +
-                   '</tr>'+
-               '</tbody>'
+            productContainer.innerHTML +=
+                '<tbody class="products">' +
+                '<tr>' +
+                '<td>' +
+                '<a href="#" class="deleteProduct">' +
+                '<i class="far fa-window-close"></i>' +
+                '</a> ' +
+                '<img src="'+item.tag+'" width="70" height="70">' +
+                ''+item.name+'' +
+                '</td>' +
+                '<td class="price">' +
+                ''+item.price+'€' +
+                '</td>' +
+                '<td class="quantity">' +
+                '<a href="#" class="lessQuantity">' +
+                '<i class="fas fa-arrow-circle-left"></i>' +
+                '</a> ' +
+                '<span class="itemQuantity">' +
+                ''+item.inCart+'' +
+                '</span> ' +
+                '<a href="#" class="addQuantity">' +
+                '<i class="fas fa-arrow-circle-right"></i>' +
+                '</a> ' +
+                '</td>' +
+                '<td>' +
+                ''+item.price * item.inCart+'€'+
+                '</td>' +
+                '</tr>'+
+                '</tbody>'
         });
 
         productContainer.innerHTML +=
             '<div class="basketTotalContainer">' +
-                '<h4 class="basketTotalTitle">' +
-                    'Total ' +
-                '</h4>' +
-                '<h4 class="basketTotal">' +
-                    ''+cartCost+'€' +
-                '</h4>' +
+            '<h4 class="basketTotalTitle">' +
+            'Total ' +
+            '</h4>' +
+            '<h4 class="basketTotal">' +
+            ''+cartCost+'€' +
+            '</h4>' +
             '</div>'
         ;
         manageQuantity();
