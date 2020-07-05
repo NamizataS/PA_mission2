@@ -3,23 +3,10 @@ require 'header_homepage.php';
 ?>
 <?php
 require 'functions.php';
-require '../vendor/autoload.php';
 ?>
 
 <?php
 session_start();
-if ( isset($_GET['lat']) && isset($_GET['lng']) ){
-    $lat = $_GET['lat'];
-    $lon = $_GET['lng'];
-}
-$query = ''.$lat.','.$lon;
-$geocoder = new \OpenCage\Geocoder\Geocoder('0a056a691dd14afc9a3ef1cbcbfedec1');
-try {
-    $result = $geocoder->geocode($query);
-    $postcode = intval($result['results'][0]['components']['postcode']/1000);
-} catch (Exception $e) {
-    echo 'fail';
-}
 if( isset($_POST['checkLogin'])) {
     if ( $_POST['mail'] == NULL && $_POST['password'] == NULL ){
         echo 'Mauvais identifiant ou mot de passe !';
@@ -36,7 +23,6 @@ if( isset($_POST['checkLogin'])) {
         //$_SESSION['userPostcode'] = $user['postcode'];
         $_SESSION['id'] = $user['id'];
         $_SESSION['language'] = "fr";
-        $_SESSION['postcode'] = $postcode;
 
         header( "Location: ./client/availableTruck.php?lang=fr");
     }
@@ -62,7 +48,7 @@ if( isset($_POST['checkLogin'])) {
             </div>
 
             <div class="card-body">
-                <form method="POST" action="login.php?lat=<?php echo $_GET['lat']?>&lng=<?php echo $_GET['lng']?>">
+                <form method="POST" action="login.php">
                     <div class="form-group">
                         <label for="email"><?php echo $text_email; ?></label>
                         <input type="email" name="mail" class="form-control" id="mail" aria-describedby="mail"/>
