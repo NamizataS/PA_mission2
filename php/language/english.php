@@ -1,5 +1,12 @@
 <?php
 
+
+//INDEX
+$text_welcome = "Welcome to Driv'N Cook, a website to order your favorite dishes";
+$text_get_started = "Find foodtrucks close to your position";
+$text_infos = "More infos about our company";
+$text_about = "About Driv'N Cook";
+$text_textAbout = "Driv'N Cook was created in the 12th arrondissement in Paris. We have foodtrucks which offers numerous quality dishes made from fresh and local products.";
 $text_register = "Register";
 $text_login = "Sign In";
 $text_lang = "EN";

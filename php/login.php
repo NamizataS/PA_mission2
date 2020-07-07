@@ -49,39 +49,34 @@ if( isset($_POST['checkLogin'])) {
 
 ?>
 
-    <div class="hero-wrap-big">
-        <br/>
-        <br/>
-        <br/>
-
-        <div class="container">
-            <div class="card card-register mx-auto mt-5">
-                <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
-                <div class="card-header">
-                    <h1 class="text-center"><?php echo $text_connexion_sentence; ?></h1>
-                </div>
-
-                <div class="card-body">
-                    <form method="POST" action="login.php?lat=<?php echo $_GET['lat']?>&lng=<?php echo $_GET['lng']?>">
-                        <div class="form-group">
-                            <label for="email"><?php echo $text_email; ?></label>
-                            <input type="email" name="mail" class="form-control" id="mail" aria-describedby="mail"/>
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-12 my-auto">
+                    <div class="card card-register mx-auto mt-5" style="background-color: inherit">
+                        <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
+                        <div class="card-header">
+                            <h1 class="text-center"><?php echo $text_connexion_sentence; ?></h1>
                         </div>
-                        <div class="form-group">
-                            <label for="password"><?php echo $text_password; ?></label>
-                            <input type="password" name="password" class="form-control" id="password"/>
+
+                        <div class="card-body">
+                            <form method="POST" action="login.php?lat=<?php echo $_GET['lat']?>&lng=<?php echo $_GET['lng']?>">
+                                <div class="form-group">
+                                    <label for="email"><?php echo $text_email; ?></label>
+                                    <input type="email" name="mail" class="form-control" id="mail" aria-describedby="mail"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password"><?php echo $text_password; ?></label>
+                                    <input type="password" name="password" class="form-control" id="password"/>
+                                </div>
+                                <button type="submit" name="checkLogin" class="btn btn-outline btn-xl"><?php echo $text_connexion; ?> </button>
+                            </form>
                         </div>
-                        <button type="submit" name="checkLogin" class="btn btn-outline-primary"><?php echo $text_connexion; ?> </button>
-                    </form>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
-
-    <br/>
-    <br/>
-    <br/>
+    </header>
 
 <?php
 require 'footer_homepage.php';

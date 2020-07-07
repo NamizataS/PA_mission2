@@ -19,76 +19,76 @@ if ( isset($_POST['lastname']) && isset($_POST['firstname']) && isset($_POST['bi
         "postcode"=>$_POST['postcode'],
         "city"=>$_POST['city']
     ]);
-} else {
-    echo "des champs sont manquants";
+    echo "Ajout effectué";
+    header("Location: login.php");
 }
 ?>
 
-<div class="big-hero-wrap">
-    <br/>
-    <div class="container">
-        <div class="card card-register mx-auto mt-5" style="background-color: #FFE5A8">
-            <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
-            <div class="card-header">
-                <h1 class="text-center"><?php echo $text_create; ?></h1>
-            </div>
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-12 my-auto">
+                <div class="card card-register mx-auto mt-5" style="background-color: inherit">
+                    <input type=button onclick=window.location.href='index.php' value="<?php echo $text_return_home; ?>"/>
+                    <div class="card-header">
+                        <h1 class="text-center"><?php echo $text_create; ?></h1>
+                    </div>
 
-            <div class="card-body">
-                <form method="post" action="register.php">
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="lastname"><?php echo $text_lastname; ?></label>
-                            <input type="text" class="form-control" id="lastname" name="lastname"/>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="firstname"><?php echo $text_firstname; ?></label>
-                            <input type="text" class="form-control" id="firstname" name="firstname"/>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="birthdate"><?php echo $text_birthdate; ?></label>
-                            <input type="date" class="form-control" id="birthdate" name="birthdate">
-                            <small id="birthdateHelp" class="form-text text-muted"><?php echo $text_birthdate_format; ?></small>
-                        </div>
+                    <div class="card-body">
+                        <form method="post" action="register.php">
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="lastname"><?php echo $text_lastname; ?></label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname"/>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="firstname"><?php echo $text_firstname; ?></label>
+                                    <input type="text" class="form-control" id="firstname" name="firstname"/>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="birthdate"><?php echo $text_birthdate; ?></label>
+                                    <input type="date" class="form-control" id="birthdate" name="birthdate">
+                                    <small id="birthdateHelp" class="form-text text-muted"><?php echo $text_birthdate_format; ?></small>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="email"><?php echo $text_email; ?></label>
+                                    <input type="email" class="form-control" id="email" name="email"/>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password"><?php echo $text_password; ?></label>
+                                    <input type="password" class="form-control" id="password" name="password"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-2">
+                                    <label for="num">N°</label>
+                                    <input type="text" class="form-control" id="num" name="num"/>
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label for="street"><?php echo $text_street; ?></label>
+                                    <input type="text" class="form-control" id="street" name="street"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="postcode"><?php echo $text_postcode; ?></label>
+                                    <input type="text" class="form-control" id="postcode" name="postcode"/>
+                                </div>
+                                <div class="form-group col-md-7">
+                                    <label for="city"><?php echo $text_city; ?></label>
+                                    <input type="text" class="form-control" id="city" name="city"/>
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-outline btn-xl" value="<?php echo $text_submit; ?>">
+                        </form>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="email"><?php echo $text_email; ?></label>
-                            <input type="email" class="form-control" id="email" name="email"/>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="password"><?php echo $text_password; ?></label>
-                            <input type="password" class="form-control" id="password" name="password"/>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-2">
-                            <label for="num">N°</label>
-                            <input type="text" class="form-control" id="num" name="num"/>
-                        </div>
-                        <div class="form-group col-md-8">
-                            <label for="street"><?php echo $text_street; ?></label>
-                            <input type="text" class="form-control" id="street" name="street"/>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="postcode"><?php echo $text_postcode; ?></label>
-                            <input type="text" class="form-control" id="postcode" name="postcode"/>
-                        </div>
-                        <div class="form-group col-md-7">
-                            <label for="city"><?php echo $text_city; ?></label>
-                            <input type="text" class="form-control" id="city" name="city"/>
-                        </div>
-                    </div>
-                    <input type="submit" class="btn btn-outline-primary" value="<?php echo $text_submit; ?>">
-                </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<br/>
-<br/>
-
+</header>
 
 <?php
 require 'footer_homepage.php'

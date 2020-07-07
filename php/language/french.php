@@ -1,5 +1,11 @@
 <?php
 
+//INDEX
+$text_welcome = "Bienvenue sur Driv'N Cook un site qui vous permet de commander vos plats préférés";
+$text_get_started = "Trouver des restaurants à proximité";
+$text_infos = "Plus d'informations sur notre société";
+$text_about = "A propos de Driv'N Cook";
+$text_textAbout = "C'est à Paris, dans le 12ème arrondissement, que s'est créée Driv'n Cook, basée sur un concept de food trucks proposant des plats de qualité, à base de produits frais, bruts et majoritairement locaux. ";
 $text_register = "S'inscrire";
 $text_login = "Se connecter";
 $text_lang = "FR";
