@@ -68,7 +68,7 @@ $count = 0;
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Vous devez être connecté pour voir la carte',
-                footer: '<a href="login.php">Se connecter</a> ' +
+                footer: '<a href="login.php?lat=<?php echo $lat?>&lon=<?php echo $lon?>">Se connecter</a> ' +
                     '\\' +
                     ' <a href="register.php">Créer un compte</a>'
             });
