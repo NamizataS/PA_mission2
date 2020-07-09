@@ -72,7 +72,25 @@ if($_SESSION['language'] == "fr"){
         .basketTotal {
             width: 10%;
         }
+        .dropdown:hover>.dropdown-menu{
+            display: block;
+            border: none;
+            outline: none;
+        }
 
+        .languageBtn .dropdown .dropdown-toggle {
+            border: none;
+            outline: none;
+            background-color: inherit;
+            margin-top: 2%;
+        }
+
+        .profilBtn .dropdown .dropdown-toggle {
+            border: none;
+            outline: none;
+            background-color: inherit;
+            margin-top: 2%;
+        }
 
     </style>
 </head>
@@ -95,8 +113,18 @@ if($_SESSION['language'] == "fr"){
                 <li class="nav-item active mx-5">
                     <a class="nav-link" href="listOfEvents.php"> <?php echo $text_list_event; ?></a>
                 </li>
-                <li class="nav-item active mx-5">
-                    <a class="nav-link" href="clientProfil.php"> <?php echo $text_profil; ?> </a>
+                <li class="nav-item dropdown profilBtn active mx-5">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #E36F65">
+                            <?php echo $text_profil; ?>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="clientProfil.php"><?php echo $text_infos_client; ?></a>
+                            <a class="dropdown-item" href="changePwd.php"><?php echo $text_change_pwd; ?></a>
+                            <a class="dropdown-item" href="changeAddress.php"><?php echo $text_change_address; ?></a>
+                            <a class="dropdown-item" href="purchase.php"><?php echo $text_purchase; ?></a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item active mx-5 cart" id="cart">
                     <span style="margin-left: 5px">0</span>

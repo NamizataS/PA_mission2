@@ -34,11 +34,11 @@ if( isset($_POST['checkLogin'])) {
         $_SESSION['lastname'] = $user['lastname'];
         $_SESSION['firstname'] = $user['firstname'];
         //$_SESSION['userPostcode'] = $user['postcode'];
-        $_SESSION['id'] = $user['id'];
+        $_SESSION['ID'] = $user['ID'];
         $_SESSION['language'] = "fr";
         $_SESSION['postcode'] = $postcode;
 
-        header( "Location: ./client/availableTruck.php?lang=fr");
+        header( "Location: ./client/availableTruck.php?lang=fr&id=".$_SESSION['ID']);
     }
     else {
         session_destroy();

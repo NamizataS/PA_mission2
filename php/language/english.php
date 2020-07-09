@@ -48,6 +48,10 @@ $text_see_more = "See more";
 //PROFIL
 $text_profil = "Your profil";
 $text_address = "Address";
+$text_infos_client = "My infos";
+$text_change_pwd = "Update password";
+$text_change_address = "Update address";
+$text_purchase = "Order history";
 
 //PAYMENT
 $text_card_information = "Please enter your information to pay for your order.";
@@ -73,3 +77,21 @@ $text_confirm_participate_event = "Do you want to participate to the event?";
 $text_confirm_unsuscribe_event = "Do you no longer want to go to the event?";
 $text_participate = "Participate";
 $text_stop_participate = "Withdraw";
+
+
+//CHANGE PWD
+$text_index = "Return to your profil";
+$text_old_pwd = "Enter the old password";
+$text_new_pwd_ask = "Enter the new password";
+$text_new_pwd_confirm = "Confirm the new password";
+$text_cancel = "Cancel";
+$text_added = "Password modified";
+$text_different = "The new password are different";
+$text_old_different = "Wrong password";
+
+//CHANGE ADDRESS
+$text_new_address = "Input your new address";
+
+//PURCHASE HISTORY
+$text_amount = "Amount";
+$text_date = "Date of the purchase";

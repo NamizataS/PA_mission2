@@ -27,5 +27,5 @@ if (filter_var($mail,FILTER_VALIDATE_EMAIL)
     ]);
 
     //var_dump($charge);
-    header( "Location: successfulPayment.php");
+    header( "Location: successfulPayment.php?total=".$_POST['totalCart']);
 }

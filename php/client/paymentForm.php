@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 require '../functions.php';
 require 'header_client.php';
 ?>
@@ -12,26 +11,32 @@ require 'header_client.php';
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-lg-12 my-auto">
-                    <div class="card card-register mx-auto mt-5" style="background-color: inherit">
+                    <div class="card card-register mx-auto mt-5 text-center" style="background-color: inherit">
                         <div class="card-header">
                             <h1 class="text-center"><?php echo $text_card_information; ?></h1>
                         </div>
                         <div class="card-body">
                             <form action="payment.php" id="paymentForm" method="post">
                                 <div class="form-group">
-                                    <input type="text" name="name" placeholder="<?php echo $text_name ?>" required />
+                                    <input type="text" name="name" class="form-control" placeholder="<?php echo $text_name ?>" required />
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="<?php echo $text_code ?>" data-stripe="number" required /> <?php echo $text_code_format ?>
+                                <div class="form-row">
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" placeholder="<?php echo $text_code ?>" data-stripe="number" required />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <?php echo $text_code_format ?>
+                                    </div>
+
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="<?php echo $text_month ?>" data-stripe="exp_month" required />
+                                <div class="form-row">
+                                    <input type="text" class="form-control" placeholder="<?php echo $text_month ?>" data-stripe="exp_month" required />
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="<?php echo $text_year ?>" data-stripe="exp_year" required />
+                                <div class="form-row">
+                                    <input type="text" class="form-control" placeholder="<?php echo $text_year ?>" data-stripe="exp_year" required />
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="<?php echo $text_cvc ?>" data-stripe="cvc" required />
+                                <div class="form-row">
+                                    <input type="text" class="form-control" placeholder="<?php echo $text_cvc ?>" data-stripe="cvc" required />
                                 </div>
                                 <p>
                                     <button type="submit" class="btn btn-outline btn-xl"><?php echo $text_pay ?></button>

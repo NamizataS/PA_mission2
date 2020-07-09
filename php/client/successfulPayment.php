@@ -1,23 +1,26 @@
 <?php
-session_start();
 require '../functions.php';
 require 'header_client.php';
 
 $db = connectDB();
-$query = $db->prepare("INSERT INTO purchase(ID,amount, date, client_id) VALUES (NULL,:amount, :date, :client_id)");
+$query = $db->prepare("INSERT INTO purchase(ID, amount, date, clientid) VALUES (NULL, :amount, :date, :clientid)");
 $query->execute( [
         "amount"=>$_GET['total'],
-        "date"=>date("Y-m-d"),
-        "client_id"=>$_SESSION['id']
+        "date"=>date("Y-m-d H:i:s"),
+        "clientid"=>$_SESSION['ID']
 ]);
 ?>
 
-
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-12 my-auto">
+                <h3 class="section-heading text-center"><?php echo $text_successful_payment; ?></h3>
+            </div>
+        </div>
+    </div>
+</header>
 <script>
     localStorage.clear();
 </script>
-<div>
-    <?php
-       // echo $text_successful_payment;
-    ?>
-</div>
+

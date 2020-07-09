@@ -7,10 +7,6 @@ $truckAvailable = 0;
 
 $county = $_SESSION['postcode'];
 
-
-
-
-
 ?>
 
 <header class="masthead">
@@ -27,7 +23,7 @@ $county = $_SESSION['postcode'];
                         $postcode = intval($row['postcode']);
                         $postcode = $postcode / 1000;
                         $postcode = intval($postcode);
-                        if($postcode == $county && $row['franchise_id'] != NULL) {
+                        if($postcode == $county && $row['franchise_id'] != NULL && $row['name'] != null ) {
                             ?>
                             <div class="row">
                                 <div class="col-sm">

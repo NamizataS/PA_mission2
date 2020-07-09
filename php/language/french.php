@@ -48,6 +48,10 @@ $text_see_more = "Voir plus";
 //PROFIL
 $text_profil = "Votre compte";
 $text_address = "Adresse";
+$text_infos_client = "Mes infos";
+$text_change_pwd = "Changer mon mot de passe";
+$text_change_address = "Changer mon addresse";
+$text_purchase = "Historique de commande";
 
 //PAYMENT
 $text_card_information = "Veuillez entrer vos informations pour payer.";
@@ -73,3 +77,20 @@ $text_confirm_participate_event = "Voulez vous participer à l'évènement?";
 $text_confirm_unsuscribe_event = "Voulez vous désinscrire de l'évènement?";
 $text_participate = "Participer";
 $text_stop_participate = "Se désister de l'évènement";
+
+//CHANGE PWD
+$text_index = "Retourner sur votre profil";
+$text_old_pwd = "Entrez votre ancien mot de passe";
+$text_new_pwd_ask = "Entrez votre nouveau mot de passe";
+$text_new_pwd_confirm = "Confirmez votre nouveau mot de passe";
+$text_cancel = "Annuler";
+$text_added = "Mot de passe modifié";
+$text_different = "Les deux mots de passe sont différents";
+$text_old_different = "Mauvais mot de passe";
+
+//CHANGE ADDRESS
+$text_new_address = "Entrez votre nouvelle addresse";
+
+//PURCHASE HISTORY
+$text_amount = "Montant ";
+$text_date = "Date d'achat";

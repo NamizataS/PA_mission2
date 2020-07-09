@@ -10,7 +10,6 @@ $franchiseid = $_GET['franchiseid'];
         <div class="row h-100">
             <div class="col-lg-12 my-auto">
                 <?php
-
                 $db = connectDB();
                 $stmt = $db->query('SELECT * FROM recipe WHERE franchiseid='.$franchiseid);
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
