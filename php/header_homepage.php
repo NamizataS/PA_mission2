@@ -31,6 +31,7 @@ if ( isset($_SESSION['language'] ) ){
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/new-age.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="../js/geolocationLogin.js"></script>
 </head>
 

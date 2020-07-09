@@ -35,8 +35,8 @@ $count = 0;
                                     <div class="card" style="width: 18rem;background-color: inherit">
                                         <img src="../img/foodtruck.jpg" class="card-img-top" alt="">
                                         <div class="card-body">
-                                            <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                                            <a href="../php/client/truckPage.php?franchiseid=<?php echo $row['franchise_id']?>"><input type="submit" name="seeMore" class="btn btn-primary" value="<?php echo $text_see_more ?>"/></a>
+                                            <h5 class="card-title truckName"><?php echo $row['name']; ?></h5>
+                                            <a href="#" class="truckPage"><input type="submit" name="seeMore" class="btn btn-primary" value="<?php echo $text_see_more ?>"/></a>
                                         </div>
                                     </div>
                                 </div>
@@ -59,6 +59,23 @@ $count = 0;
     </div>
 </header>
 
+
+<script>
+    let trucks = document.querySelectorAll('.truckPage');
+    for ( let i = 0; i < trucks.length; i++ ){
+        trucks[i].addEventListener( 'click', ()=> {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Vous devez être connecté pour voir la carte',
+                footer: '<a href="login.php">Se connecter</a> ' +
+                    '\\' +
+                    ' <a href="register.php">Créer un compte</a>'
+            });
+        });
+    }
+
+</script>
 
 <?php
 require 'footer_homepage.php';
